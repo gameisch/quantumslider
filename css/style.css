@@ -1,0 +1,369 @@
+@charset "UTF-8";
+@font-face{
+    font-family:"geometria";
+    src:url("fonts/Geometria-Bold.eot");
+    src:url("fonts/Geometria-Bold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/Geometria-Bold.woff") format("woff"),
+    url("fonts/Geometria-Bold.ttf") format("truetype");
+    font-style:normal;
+    font-weight:normal;
+}
+::-moz-selection {
+    color: #ff0; /* Цвет текста */
+    background: #000; /* Цвет фона */
+}
+::-webkit-selection {
+    color: #ff0; /* Цвет текста */
+    background: #000; /* Цвет фона */
+}
+::selection {
+    color: #ff0; /* Цвет текста */
+    background: #000; /* Цвет фона */
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, images, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin:0;padding:0;border:0;font-size:14px;font:inherit;vertical-align:baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{display:block;}
+
+table{border-collapse:collapse;border-spacing:0;}
+
+h1, h2, h3, h4, h5, h6{font-family:'geometria';}
+
+img{border:0 none;}
+
+a img{border:0 none;}
+
+.blocked{display:none!important;}
+.hidden{visibility: hidden;}
+.nopacity{opacity: 0;}
+.show{display:block;}
+.clear{ clear: both;}
+.absolute{ position: absolute;}
+.fixed{ position: fixed;}
+.relative{ position: relative;}
+.div_100{ position: absolute; height: 100%; width: 100%; top: 0; left: 0;}
+.transition3s{-webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;}
+.transition10s{-webkit-transition: 1.0s; -moz-transition: 1.0s; -o-transition: 1.0s; transition: 1.0s;}
+.w100c{width: 100%; height: 100%; text-align: center;}
+.bgblack{background-color: #000;}
+.bgred{
+    /*background-color: #da3832;*/
+    background:#da3832 url('../img/verizon-logo.png') no-repeat 50%;
+}
+.bgblue{
+    /*background-color: #47ace9;*/
+    background:#47ace9 url('../img/orion-logo.png') no-repeat 50%;
+}
+.bggreen{
+    /*background-color: #79c042;*/
+    background:#79c042 url('../img/logo-modelo.png') no-repeat 50%;
+}
+.bgpurple{
+    /*background-color: #6e298d;*/
+    background:#6e298d url('../img/orion-logo.png') no-repeat 50%;
+}
+.bgorange{
+    /*background-color: #f7941e;*/
+    background:#f7941e url('../img/corona-logo.png') no-repeat 50%;
+}
+html{width: 100%; height: 100%; margin: 0; padding: 0;}
+body{
+    font-size: 12px;
+    font-family: 'geometria', Helvetica, sans-serif;
+    background:#d1d1d4;
+    min-height: 700px;
+    width: 100%;
+    min-width:320px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header { width: 100%; height: 90px; position: relative;padding-bottom:93px;}
+header .toph1{
+    position: absolute;
+    height: 46px;
+    top: 84px;
+    left: 115px;
+}
+header .toph1 h1{
+    color:#ffffff;
+    font-size:60px;
+    letter-spacing: 1px;
+}
+/*header .toph2{*/
+    /*position: absolute;*/
+    /*height: 46px;*/
+    /*top: 384px;*/
+    /*left: -60px;*/
+/*}*/
+header .toph2 {
+    position: absolute;
+    height: 456px;
+    background: #d1d1d4;
+    text-indent: -360px;
+    width: 125px;
+    top: 180px;
+    z-index: 1;
+    left: 0;
+}
+header .toph2 h2{
+    color:#ffffff;
+    font-size:50px;
+    transform: rotate(-90deg);
+}
+header .toph2 h2 span{
+    color:#929fa2;
+}
+header .topv{
+    position: absolute;
+    height: 46px;
+    top: 88px;
+    right: 10%;
+    padding: 0 10px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    clear: both;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+header .topv:hover{ border-color: #ffffff;background: #ffffff}
+header .topv a.topnav_link{
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-block;
+    float: left;
+    padding: 16px 10px;
+    margin:0 10px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+header .topv a.topnav_link.active,
+header .topv a.topnav_link:hover{ color: #d1d1d4;}
+header .topv a.topnav_link:nth-child(3){display: none;}
+.owl-stage{
+    left:20px;
+}
+.txt{
+    position: absolute;
+    width: 100%;
+    height:auto;
+    left:0;
+    right:0;
+    top:100px;
+    text-align: center;
+}
+.txt h1{
+    color:#ffffff;
+    font-size:50px;
+    line-height: 42px;
+    margin-bottom: 25px;
+    letter-spacing: 0;
+}
+.txt p {
+    font-size: 18px;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20%;
+}
+.txt .bt{
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-block;
+    border:2px solid #fff;
+    border-radius:4px;
+    padding: 16px 25px 14px 25px;
+    margin:34px auto;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.txt .bt:hover{
+    color:  #000;
+    background: #fff;
+}
+.bg-link{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    bottom: 0;
+    min-height: 430px;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*background-repeat: no-repeat;*/
+    /*background-clip: border-box;*/
+    /*background-origin: padding-box;*/
+    /*background-position: center bottom;*/
+    /*background-size: 50%;*/
+}
+#carousel .transition3s{
+    width: 490px;
+    height:446px;
+}
+#carousel .bg-link:hover, #carousel .transition3s:hover{
+    cursor:  url(/img/icon-scroll.png), pointer;
+}
+.shadow:before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    width: 466px;
+    right:0;
+    height: 100%;
+    background-image: linear-gradient(to left, #000000, rgba(0, 0, 0, 0.01));
+}
+.shadow2:before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    width: 466px;
+    left:0;
+    height: 100%;
+    background-image: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.01));
+}
+@keyframes runTop {
+    from {
+        -webkit-transform: translate3d(-100%, 100%, 0) skew(160deg);
+        transform: translate3d(-100%, 100%, 0) skew(160deg);
+        visibility: visible;
+    }
+    25% {
+        -webkit-transform: translate3d(0%, 0%, 0) skew(160deg);
+        transform: translate3d(00%, 0%, 0) skew(160deg);
+    }
+    50% {
+        -webkit-transform: translate3d(0%, 0%, 0) skew(160deg);
+        transform: translate3d(00%, 0%, 0) skew(160deg);
+    }
+    75% {
+        -webkit-transform: translate3d(150%, -100%, 0) skew(160deg);
+        transform: translate3d(150%, -100%, 0) skew(160deg);
+    }
+    to {
+        -webkit-transform: translate3d(150%, -100%, 0) skew(160deg);
+        transform: translate3d(150%, -100%, 0) skew(160deg);
+    }
+}
+.runTopLines{
+    -webkit-animation-name: runTop;
+    animation-name: runTop;
+}
+.animatedLines{
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.delayRunLine{
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+.animatedLines.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 1440px){
+    .owl-stage{
+        left:0;
+    }
+}
+@media screen and (max-width: 660px){
+    header .toph1 {
+        text-align: center;
+        width: 100%;
+        left: 0;
+    }
+    header .toph2 {
+        left: 0;
+        top: 155px;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        background: transparent;
+        text-indent: 0;
+    }
+    header .toph2 h2{
+        font-size: 20px;
+        transform: rotate(0deg);
+    }
+    header .toph2 h2 span{
+        color:#929fa2;
+    }
+    header .topv {
+        margin: 0 auto;
+        top: 25px;
+        text-align: center;
+        width: 122px;
+        right: 0;
+        left: 0;
+    }
+}
+@media screen and (max-width: 390px){
+    header .toph1 h1{
+        font-size:40px;
+    }
+    header .toph2 {
+        left: 0;
+        top: 142px;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        background: transparent;
+        text-indent: 0;
+    }
+    header .toph2 h2{
+        font-size: 20px;
+        transform: rotate(0deg);
+    }
+}
+@media only screen and (-o-min-device-pixel-ratio: 5/4),
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and (min--moz-device-pixel-ratio: 1.25),
+only screen and (min-device-pixel-ratio: 1.25),
+only screen and (min-resolution: 1.25dppx) {
+    .bgred{
+        /*background-color: #da3832;*/
+        background:#da3832 url('../img/verizon-logo@2x.png') no-repeat 50%;
+    }
+    .bgblue{
+        /*background-color: #47ace9;*/
+        background:#47ace9 url('../img/orion-logo@2x.png') no-repeat 50%;
+    }
+    .bggreen{
+        /*background-color: #79c042;*/
+        background:#79c042 url('../img/logo-modelo@2x.png') no-repeat 50%;
+    }
+    .bgpurple{
+        /*background-color: #6e298d;*/
+        background:#6e298d url('../img/orion-logo@2x.png') no-repeat 50%;
+    }
+    .bgorange{
+        /*background-color: #f7941e;*/
+        background:#f7941e url('../img/corona-logo@2x.png') no-repeat 50%;
+    }
+}
